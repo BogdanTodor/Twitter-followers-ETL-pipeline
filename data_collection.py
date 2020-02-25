@@ -48,10 +48,11 @@ print(day_summary)
 
 ###             INSERT DATA INTO POSTGRES                  ###
 
+
 def update_db():
     try:
         # Connect to existing database 
-        conn = psycopg2.connect("dbname=followers_pipeline user=Bogdan")
+        conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='pass'")
         cursor = conn.cursor()
 
         # Verify the results
