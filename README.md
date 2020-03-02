@@ -23,9 +23,28 @@ I also wanted to use this project to learn how to use Apache Airflow and schedul
 
 Lastly, I also used this project as a means of learning how to use and interact with the Twitter API, as well as using external means (file located outside of git repository) to store API keys, and parsing them into the program instead of hard coding values.
 
-# TODO
-+ Include installation instructions
-+ Include pip list
+# Required installations
++ Postgres (and pgadmin if you prefer using the GUI)
++ Python3
++ psycopg2
++ tweepy
+
+This project was also developed in Linux (Ubuntu)
+
+# Deeper explanation of the program
+Tweepy requires 4 unique keys to authenticate, these can be found in your app within your Twitter developer account. For the purpose of this project, a file with JSON formatting was created locally outside the repository and its contents are parsed into the program using the JSON module (done for security reasons). Using the data parsed from this file, the connection to the API is authenticated and an API object is created.
+
+The three main data points used for this project are:
++ The current date
++ The number of followers at the time the API is caleld
++ The challenge day
+
+
+
+
+
+
+TODO
 + Deeper explanation of the program itself
 + Flow diagram
 
